@@ -1,0 +1,90 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"events": [
+		"onLoad",
+		"onPageChange",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onOutsideCall",
+		"onBeginDragOver",
+		"onDragOver",
+		"onDrop",
+		"onAfterKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onAfterEdit",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"vA01_Quit": {
+					"type": "button",
+					"text": "終了",
+					"top": 16,
+					"left": 912,
+					"width": 110,
+					"height": 26,
+					"events": [
+						"onClick"
+					],
+					"right": 1022,
+					"dataSource": "vA01_Quit",
+					"class": "meiryo12",
+					"action": "quit",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "q"
+				},
+				"vA01_DesignMode": {
+					"type": "button",
+					"text": "デザインモードへ",
+					"top": 68,
+					"left": 912,
+					"width": 110,
+					"height": 26,
+					"events": [
+						"onClick"
+					],
+					"right": 1022,
+					"dataSource": "vA01_DesignMode",
+					"class": "meiryo12",
+					"action": "cancel",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": true,
+					"shortcutAlt": false,
+					"shortcutKey": "w"
+				}
+			}
+		}
+	],
+	"geometryStamp": 37,
+	"width": 1042,
+	"height": 644,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	}
+}

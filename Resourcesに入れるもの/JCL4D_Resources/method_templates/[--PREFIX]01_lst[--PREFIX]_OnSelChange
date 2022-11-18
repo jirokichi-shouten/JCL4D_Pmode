@@ -1,0 +1,5 @@
+//[--PREFIX]01_lst[--PREFIX]_OnSelChange
+//FG v202103 [--DATE]
+//[--TABLE] リストボックスの選択行が変わった。クリックと矢印キー
+
+[--PREFIX]01_SetControlsValues 

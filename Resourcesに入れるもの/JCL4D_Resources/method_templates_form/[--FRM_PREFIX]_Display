@@ -1,0 +1,18 @@
+//[--FRM_PREFIX]_Display
+//FG v202103 [--DATE]
+//[--TABLE] 入力フォームを表示
+
+C_LONGINT($wRef)
+C_TEXT($title)
+C_TEXT($frmName)
+$frmName:="[--FRM_PREFIX]_Input"
+
+$wref:=Open form window([[--TABLE]];$frmName;Movable form dialog box;Horizontally Centered;Vertically Centered;*)
+
+$title:=$frmName
+SET WINDOW TITLE($title)
+
+DIALOG([[--TABLE]];$frmName)
+CLOSE WINDOW($wRef)
+
+$0:=OK

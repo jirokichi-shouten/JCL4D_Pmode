@@ -1,0 +1,30 @@
+﻿				"v[--FRM_PREFIX]_rectTitle": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 987,
+					"height": 55,
+					"fill": "[--RONDOM_COLOR]",
+					"stroke": "[--RONDOM_COLOR]"
+				},
+				"v[--FRM_PREFIX]_varTitle": {
+					"type": "input",
+					"top": 16,
+					"left": 26,
+					"width": 288,
+					"height": 26,
+					"dataSource": "v[--FRM_PREFIX]_varTitle",
+					"stroke": "#B1C4DD",
+					"class": "JCL_Maryo16B",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				}

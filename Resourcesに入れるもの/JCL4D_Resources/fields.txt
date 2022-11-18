@@ -1,0 +1,26 @@
+﻿SOURCE	SO				ソースコード	管理対象の資産
+ID	Is LongInt	0	1	0	ID	
+FA_ID	Is LongInt	0	1	0	ファミリーID	所属するファミリーのID
+METHOD_NAME	Is Alpha Field	80	1	0	メソッド名	
+FILE_NAME	Is Alpha Field	80	0	0	ソースファイル名	.4DM、.4DForm, jsonなど
+INPUT_DATE	Is Date	0	0	0	取得日	
+COMMENT	Is Text	0	0	0	コメント	
+DEL_FLAG	Is LongInt	0	1	0	削除フラグ	
+UPDATE_DATEMARK	Is Alpha Field	20	0	0	作成デイトマーク	
+_						
+FAMILY	FA				ファミリー	ソースなどをグループ化するため
+ID	Is LongInt	0	1	0	ID	
+NAME	Is Alpha Field	255	0	0	ファミリー名	
+REMARK	Is Text	0	0	0	リマーク	備考欄
+SORT_ORDER	Is LongInt	0	0	0	並び順	
+DEL_FLAG	Is LongInt	0	1	0	削除フラグ	
+UPDATE_DATEMARK	Is Alpha Field	20	0	0	作成デイトマーク	
+_						
+Z_KeyValue	KV				キーバリュー	設定情報などを保持する
+ID	Is LongInt	0	0	0	ID	
+KEY	Is Alpha Field	80	1	0	キー文字列	
+VALUE	Is Text	0	0	0	バリュー文字列	
+LONG_VALUE	Is LongInt	0	0	0	バリュー整数値	
+DEL_FLAG	Is LongInt	0	1	0	削除フラグ	
+UPDATE_DATEMARK	Is Alpha Field	20	0	0	作成デイトマーク	
+_						

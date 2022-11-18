@@ -1,0 +1,17 @@
+//[--FRM_PREFIX]_lst[--TBL_PREFIX]_Make_asign
+//FG v202209 [--DATE]
+//[--TABLE]  オブジェクトの配列からリストボックスのプロセス変数へ転送
+
+C_LONGINT($1;$cnt)
+$cnt:=$1
+C_POINTER($2;$aryObjPtr)
+$aryObjPtr:=$2
+
+  //配列数を指定
+ARRAY [--DATATYPE](v[--FRM_PREFIX]_lst[--FIELD]; $cnt)
+
+For ($i;1;$cnt)
+	//サーバ上でゲットした内容をリストボックスに代入、ここで転送が起こる
+	v[--FRM_PREFIX]_lst[--FIELD]{$i}:=$aryObjPtr->{$i}.[--FIELD]
+	
+End for 

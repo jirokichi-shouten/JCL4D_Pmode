@@ -1,0 +1,10 @@
+//[--PREFIX]01_List
+//FG v202103 [--DATE]
+//[--TABLE] 一覧
+
+C_LONGINT($dlgOK)
+
+$dlgOK:=[--PREFIX]01_Display
+if ($dlgOK=1)
+
+end if

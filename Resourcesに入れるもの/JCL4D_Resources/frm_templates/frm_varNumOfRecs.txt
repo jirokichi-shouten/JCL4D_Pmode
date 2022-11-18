@@ -1,0 +1,19 @@
+﻿				"v[--FRM_PREFIX]_varNumOfRecs": {
+					"type": "input",
+					"top": 73,
+					"left": 914,
+					"width": 110,
+					"height": 17,
+					"dataSource": "v[--FRM_PREFIX]_varNumOfRecs",
+					"class": "JCL_Meiryo12",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}

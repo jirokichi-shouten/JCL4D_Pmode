@@ -1,0 +1,14 @@
+//[--FRM_PREFIX]_Display
+//FG v202103 [--DATE]
+//[--TABLE] 一覧ウインドウ表示
+
+C_LONGINT($wref)
+C_LONGINT($0)
+C_TEXT($title)
+
+$wref:=Open form window([[--TABLE]];"[--FRM_PREFIX]_List";Movable form dialog box;Horizontally Centered;Vertically Centered;*)
+$title:="[--FRM_PREFIX]_List"
+DIALOG([[--TABLE]];"[--FRM_PREFIX]_List")
+CLOSE WINDOW($Wref)//ウィンドウを閉じる 
+
+$0:=OK

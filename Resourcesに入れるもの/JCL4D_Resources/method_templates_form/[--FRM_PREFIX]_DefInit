@@ -1,0 +1,9 @@
+//[--FRM_PREFIX]_DefInit
+//FG v202103 [--DATE]
+//[--TABLE] プロセス変数宣言・初期化
+
+//モード
+C_TEXT(v[--FRM_PREFIX]_varMode)
+
+//入力用プロセス変数
+C_[--DATATYPE](v[--FRM_PREFIX]_var[--FIELD])

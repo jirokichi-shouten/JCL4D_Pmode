@@ -1,0 +1,26 @@
+﻿"v[--FRM_PREFIX]_lst[--TBL_PREFIX]": {
+	"type": "listbox",
+	"top": 94,
+	"left": 20,
+	"width": 1002,
+	"height": 472,
+	"sizingX": "grow",
+	"sizingY": "grow",
+	"resizingMode": "legacy",
+	"dataSource": "v[--FRM_PREFIX]_lst[--TBL_PREFIX]",
+	"rowHeight": "20px",
+	"rowHeightAutoMin": "20px",
+	"rowHeightAutoMax": "20px",
+	"class": "JCL_Meiryo12",
+	"method": "ObjectMethods/v[--FRM_PREFIX]_lst[--TBL_PREFIX].4dm",
+	"events": [
+		"onClick",
+		"onDoubleClick",
+		"onDataChange",
+		"onSelectionChange",
+		"onHeaderClick"
+	],
+	"columns": [
+	[--frm_lst_columns]
+	]
+}

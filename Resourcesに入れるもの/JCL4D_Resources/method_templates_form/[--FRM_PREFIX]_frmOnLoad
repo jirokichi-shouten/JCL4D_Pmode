@@ -1,0 +1,7 @@
+//[--FRM_PREFIX]_frmOnLoad
+//FG v202103 [--DATE]
+//[--TABLE] フォームオンロード
+
+[--FRM_PREFIX]_frmDefInit 
+
+[--FRM_PREFIX]_SetControlsValues 

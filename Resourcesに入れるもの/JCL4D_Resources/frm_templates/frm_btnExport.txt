@@ -1,0 +1,15 @@
+﻿				"v[--FRM_PREFIX]_btnExport": {
+					"type": "pictureButton",
+					"top": 64,
+					"left": 880,
+					"width": 26,
+					"height": 26,
+					"dataSource": "v[--FRM_PREFIX]_btnExport",
+					"rowCount": 4,
+					"picture": "/RESOURCES/JCL4D_Resources/pictures/square_and_arrow_down.png",
+					"switchBackWhenReleased": true,
+					"method": "ObjectMethods/v[--FRM_PREFIX]_btnExport.4dm",
+					"events": [
+						"onClick"
+					]
+				}

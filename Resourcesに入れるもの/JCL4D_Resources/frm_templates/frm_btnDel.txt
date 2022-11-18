@@ -1,0 +1,15 @@
+﻿				"v[--FRM_PREFIX]_btnDel": {
+					"type": "pictureButton",
+					"top": 64,
+					"left": 162,
+					"width": 26,
+					"height": 26,
+					"dataSource": "v[--FRM_PREFIX]_btnDel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/JCL4D_Resources/pictures/minus_rectangle.png",
+					"switchBackWhenReleased": true,
+				"method": "ObjectMethods/v[--FRM_PREFIX]_btnDel.4dm",
+					"events": [
+						"onClick"
+					]
+				}

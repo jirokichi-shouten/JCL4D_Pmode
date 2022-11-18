@@ -1,0 +1,15 @@
+﻿				"v[--FRM_PREFIX]_btnDelete": {
+					"type": "button",
+					"top": 16,
+					"left": 645,
+					"width": 94,
+					"height": 26,
+					"dataSource": "v[--FRM_PREFIX]_btnDelete",
+					"text": "削除",
+					"class": "JCL_ButtonTitle26",
+					"focusable": false,
+					"method": "ObjectMethods/v[--FRM_PREFIX]_btnDelete.4dm",
+					"events": [
+						"onClick"
+					]
+				}

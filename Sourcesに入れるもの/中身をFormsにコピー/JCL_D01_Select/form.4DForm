@@ -1,0 +1,480 @@
+{
+	"destination": "detailScreen",
+	"windowSizingX": "fixed",
+	"windowSizingY": "variable",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"vJCL_D01_rectTitle": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 754,
+					"height": 55,
+					"fill": "#f5deb3",
+					"stroke": "#f5deb3"
+				},
+				"vJCL_D01_btnOK": {
+					"type": "button",
+					"top": 358,
+					"left": 236,
+					"width": 94,
+					"height": 26,
+					"dataSource": "vJCL_D01_btnOK",
+					"shortcutKey": "[Return]",
+					"text": "作成",
+					"events": [
+						"onClick"
+					],
+					"class": "JCL_ButtonTitle26",
+					"action": "accept"
+				},
+				"vJCL_D01_btnCancel": {
+					"type": "button",
+					"top": 358,
+					"left": 68,
+					"width": 94,
+					"height": 26,
+					"dataSource": "vJCL_D01_btnCancel",
+					"action": "cancel",
+					"text": "キャンセル",
+					"events": [
+						"onClick"
+					],
+					"class": "JCL_ButtonTitle26",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "w"
+				},
+				"Text": {
+					"type": "text",
+					"top": 80,
+					"left": 34,
+					"width": 66,
+					"height": 16,
+					"text": "テーブル名"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 22,
+					"left": 31,
+					"width": 210,
+					"height": 25,
+					"fontFamily": "メイリオ",
+					"fontSize": 20,
+					"text": "JCL_FormGenerator",
+					"class": "JCL_Title24"
+				},
+				"vJCL_D01_popGoldenRatio": {
+					"type": "dropdown",
+					"left": 757,
+					"top": 128,
+					"width": 144,
+					"height": 27,
+					"events": [
+						"onDataChange"
+					],
+					"class": "JCL_Meiryo12",
+					"dataSource": "vJCL_D01_aryGoldenRatio",
+					"method": "ObjectMethods/vJCL_D01_popGoldenRatio.4dm"
+				},
+				"vJCL_D01_aryTableName": {
+					"type": "dropdown",
+					"left": 110,
+					"top": 80,
+					"width": 144,
+					"height": 27,
+					"events": [
+						"onDataChange"
+					],
+					"class": "JCL_Meiryo12",
+					"dataSource": "vJCL_D01_aryTableName",
+					"method": "ObjectMethods/vJCL_D01_aryTableName.4dm"
+				},
+				"vJCL_D01_btnColor": {
+					"type": "button",
+					"top": 129,
+					"left": 322,
+					"width": 94,
+					"height": 26,
+					"dataSource": "vJCL_D01_btnColor",
+					"action": "",
+					"text": "選び直す",
+					"events": [
+						"onClick"
+					],
+					"class": "JCL_ButtonTitle26",
+					"method": "ObjectMethods/vJCL_D01_btnColor.4dm"
+				},
+				"vJCL_D01_btnUseColor0": {
+					"type": "button",
+					"top": 129,
+					"left": 110,
+					"width": 94,
+					"height": 26,
+					"dataSource": "vJCL_D01_btnUseColor0",
+					"action": "",
+					"text": "この色を使う",
+					"events": [
+						"onClick"
+					],
+					"class": "JCL_ButtonTitle26",
+					"method": "ObjectMethods/vJCL_D01_btnUseColor0.4dm"
+				},
+				"vJCL_D01_rectColor0": {
+					"type": "rectangle",
+					"top": 129,
+					"left": 208,
+					"width": 90,
+					"height": 26,
+					"fill": "#f5deb3",
+					"stroke": "#f5deb3"
+				},
+				"vD01_lstTB": {
+					"type": "listbox",
+					"top": 0,
+					"left": 440,
+					"width": 313,
+					"height": 398,
+					"sizingX": "fixed",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "vD01_lstTB",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"class": "JCL_Meiryo12",
+					"events": [
+						"onClick",
+						"onDoubleClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"method": "ObjectMethods/vD01_lstTB.4dm",
+					"columns": [
+						{
+							"name": "vD01_lstTB_Nr",
+							"dataSource": "vD01_lstTB_Nr",
+							"width": 42,
+							"enterable": false,
+							"truncateMode": "none",
+							"class": "JCL_Meiryo12",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "HvD01_lstTB_Nr",
+								"text": "No",
+								"dataSource": "HvD01_lstTB_Nr",
+								"class": "JCL_Meiryo10"
+							},
+							"footer": {
+								"name": "vFL01_lftFL_ID1",
+								"timeFormat": "hh_mm_ss",
+								"class": "JCL_Meiryo12"
+							},
+							"textAlign": "center"
+						},
+						{
+							"name": "vD01_lstTB_COLOR",
+							"dataSource": "vD01_lstTB_COLOR",
+							"width": 90,
+							"enterable": false,
+							"truncateMode": "none",
+							"class": "JCL_Meiryo12",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "HvD01_lstTB_COLOR",
+								"text": "色",
+								"dataSource": "HvD01_lstTB_COLOR",
+								"class": "JCL_Meiryo10"
+							},
+							"footer": {
+								"name": "vFL01_lftFL_ID",
+								"timeFormat": "hh_mm_ss",
+								"class": "JCL_Meiryo12"
+							}
+						},
+						{
+							"name": "vD01_lstTB_NAME",
+							"dataSource": "vD01_lstTB_NAME",
+							"width": 178,
+							"enterable": false,
+							"truncateMode": "none",
+							"class": "JCL_Meiryo12",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "HvD01_lstTB_NAME",
+								"text": "テーブル名",
+								"dataSource": "HvD01_lstTB_NAME",
+								"class": "JCL_Meiryo10"
+							},
+							"footer": {
+								"name": "vFL01_lftFL_NAME",
+								"timeFormat": "hh_mm_ss",
+								"class": "JCL_Meiryo12"
+							}
+						}
+					]
+				},
+				"vJCL_D01_btnUseColor1": {
+					"type": "button",
+					"top": 169,
+					"left": 110,
+					"width": 94,
+					"height": 26,
+					"dataSource": "vJCL_D01_btnUseColor1",
+					"action": "",
+					"text": "この色を使う",
+					"events": [
+						"onClick"
+					],
+					"class": "JCL_ButtonTitle26",
+					"method": "ObjectMethods/vJCL_D01_btnUseColor1.4dm"
+				},
+				"vJCL_D01_rectColor1": {
+					"type": "rectangle",
+					"top": 169,
+					"left": 208,
+					"width": 90,
+					"height": 26,
+					"fill": "#f5deb3",
+					"stroke": "#f5deb3"
+				},
+				"vJCL_D01_btnUseColor2": {
+					"type": "button",
+					"top": 209,
+					"left": 110,
+					"width": 94,
+					"height": 26,
+					"dataSource": "vJCL_D01_btnUseColor2",
+					"action": "",
+					"text": "この色を使う",
+					"events": [
+						"onClick"
+					],
+					"class": "JCL_ButtonTitle26",
+					"method": "ObjectMethods/vJCL_D01_btnUseColor2.4dm"
+				},
+				"vJCL_D01_rectColor2": {
+					"type": "rectangle",
+					"top": 209,
+					"left": 208,
+					"width": 90,
+					"height": 26,
+					"fill": "#f5deb3",
+					"stroke": "#f5deb3"
+				},
+				"vJCL_D01_btnUseColor3": {
+					"type": "button",
+					"top": 249,
+					"left": 110,
+					"width": 94,
+					"height": 26,
+					"dataSource": "vJCL_D01_btnUseColor3",
+					"action": "",
+					"text": "この色を使う",
+					"events": [
+						"onClick"
+					],
+					"class": "JCL_ButtonTitle26",
+					"method": "ObjectMethods/vJCL_D01_btnUseColor3.4dm"
+				},
+				"vJCL_D01_rectColor3": {
+					"type": "rectangle",
+					"top": 249,
+					"left": 208,
+					"width": 90,
+					"height": 26,
+					"fill": "#f5deb3",
+					"stroke": "#f5deb3"
+				},
+				"vJCL_D01_btnUseColor4": {
+					"type": "button",
+					"top": 289,
+					"left": 110,
+					"width": 94,
+					"height": 26,
+					"dataSource": "vJCL_D01_btnUseColor4",
+					"action": "",
+					"text": "この色を使う",
+					"events": [
+						"onClick"
+					],
+					"class": "JCL_ButtonTitle26",
+					"method": "ObjectMethods/vJCL_D01_btnUseColor4.4dm"
+				},
+				"vJCL_D01_rectColor4": {
+					"type": "rectangle",
+					"top": 289,
+					"left": 208,
+					"width": 90,
+					"height": 26,
+					"fill": "#f5deb3",
+					"stroke": "#f5deb3"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 61,
+					"left": 262,
+					"width": 146,
+					"height": 16,
+					"text": "↑この色でフォームを作成"
+				},
+				"vJCL_D01_varColorText0": {
+					"type": "input",
+					"top": 134,
+					"left": 220,
+					"width": 68,
+					"height": 17,
+					"dataSource": "vJCL_D01_varColorText0",
+					"class": "JCL_Meiryo12",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"sizingY": "fixed"
+				},
+				"vJCL_D01_varColorText1": {
+					"type": "input",
+					"top": 174,
+					"left": 220,
+					"width": 68,
+					"height": 17,
+					"dataSource": "vJCL_D01_varColorText1",
+					"class": "JCL_Meiryo12",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"sizingY": "fixed"
+				},
+				"vJCL_D01_varColorText2": {
+					"type": "input",
+					"top": 214,
+					"left": 220,
+					"width": 68,
+					"height": 17,
+					"dataSource": "vJCL_D01_varColorText2",
+					"class": "JCL_Meiryo12",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"sizingY": "fixed"
+				},
+				"vJCL_D01_varColorText3": {
+					"type": "input",
+					"top": 254,
+					"left": 220,
+					"width": 68,
+					"height": 17,
+					"dataSource": "vJCL_D01_varColorText3",
+					"class": "JCL_Meiryo12",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"sizingY": "fixed"
+				},
+				"vJCL_D01_varColorText4": {
+					"type": "input",
+					"top": 294,
+					"left": 220,
+					"width": 68,
+					"height": 17,
+					"dataSource": "vJCL_D01_varColorText4",
+					"class": "JCL_Meiryo12",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"sizingY": "fixed"
+				}
+			}
+		}
+	],
+	"geometryStamp": 581,
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"width": 754,
+	"height": 399
+}

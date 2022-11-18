@@ -1,0 +1,22 @@
+//[--PREFIX]01_lst[--PREFIX]
+//FG v202103 [--DATE]
+//[--TABLE] リストボックス
+
+C_LONGINT($frmEvnt)
+
+$frmEvnt:=Form event code
+
+Case of 
+: ($frmEvnt=On Double Clicked)
+
+[--PREFIX]01_lst[--PREFIX]_OnDblClicked 
+
+: ($frmEvnt=On Selection Change)
+
+[--PREFIX]01_lst[--PREFIX]_OnSelChange 
+
+: ($frmEvnt=On After Sort)
+		
+[--PREFIX]01_lst[--PREFIX]_OnAfterSort 
+
+End case 

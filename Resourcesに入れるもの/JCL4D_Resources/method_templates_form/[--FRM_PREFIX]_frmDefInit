@@ -1,0 +1,5 @@
+//[--FRM_PREFIX]_frmDefInit
+//FG v202103 [--DATE]
+//[--TABLE] フォーム上のプロセス変数 宣言・初期化
+
+C_TEXT(v[--FRM_PREFIX]_varTitle)

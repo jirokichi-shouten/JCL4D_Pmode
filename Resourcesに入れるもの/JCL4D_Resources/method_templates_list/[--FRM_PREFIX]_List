@@ -1,0 +1,10 @@
+//[--FRM_PREFIX]_List
+//FG v202103 [--DATE]
+//[--TABLE] 一覧
+
+C_LONGINT($dlgOK)
+
+$dlgOK:=[--FRM_PREFIX]_Display
+if ($dlgOK=1)
+
+end if

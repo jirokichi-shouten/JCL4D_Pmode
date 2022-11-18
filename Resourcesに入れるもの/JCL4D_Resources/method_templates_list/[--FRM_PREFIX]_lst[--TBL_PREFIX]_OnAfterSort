@@ -1,0 +1,6 @@
+//[--FRM_PREFIX]_lst[--TBL_PREFIX]_OnDblClicked
+//FG v202103 [--DATE]
+//[--TABLE] リストオブジェクトがソートされた
+//ソート後に取得で、ソート履歴に一つ追加
+
+JCL_lst_Sort_AppendCurrent (->v[--FRM_PREFIX]_lst[--TBL_PREFIX];->v[--FRM_PREFIX]_lst[--TBL_PREFIX]_HeaderNames;->v[--FRM_PREFIX]_lst[--TBL_PREFIX]_SortOrders)

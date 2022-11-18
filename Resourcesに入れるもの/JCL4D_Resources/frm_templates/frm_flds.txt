@@ -1,0 +1,28 @@
+				"v[--FRM_PREFIX]_lbl[--FIELD]": {
+					"type": "text",
+					"top": [--FIELD_TOP],
+					"left": [--FIELD_LABEL_LEFT],
+					"width": [--FIELD_LABEL_WIDTH],
+					"height": 16,
+					"class": "JCL_Maryo12",
+					"text": "[--LABEL]"
+				},
+				"v[--FRM_PREFIX]_var[--FIELD]": {
+					"type": "input",
+					"top": [--FIELD_TOP],
+					"left": [--FIELD_LEFT],
+					"width": [--FIELD_WIDTH],
+					"height": 16,
+					"dataSource": "v[--FRM_PREFIX]_var[--FIELD]",
+					"dataSourceTypeHint": "[--FIELD_DATA_SOURCE_TYPE_HINT]",
+					"class": "JCL_Maryo12",
+					"focusable": true,
+					"borderStyle": "sunken",
+					"enterable": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}

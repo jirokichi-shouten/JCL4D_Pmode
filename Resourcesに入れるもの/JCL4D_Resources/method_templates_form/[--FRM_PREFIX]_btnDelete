@@ -1,0 +1,19 @@
+//[--FRM_PREFIX]_btnDelete
+//FG v202103 [--DATE]
+//[--TABLE] 削除フラグをオンして保存
+
+//アラートで確認
+C_TEXT($title;$msg;$okStr;$cancelStr)
+$title:="[--TABLE] 削除"
+$msg:="[--TABLE] を削除します。よろしいですか？"
+$okStr:="削除"
+$cancelStr:="キャンセル"
+$dlg_ok:=JCL_dlg_YesNo ($title;$msg;$okStr;$cancelStr)
+
+if ($dlg_ok=1)
+
+v[--FRM_PREFIX]_var[--TBL_PREFIX]_DEL_FLAG:=1
+
+ACCEPT
+
+end if

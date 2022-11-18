@@ -1,0 +1,12 @@
+//[--FRM_PREFIX]_frmOnLoad
+//FG v202103 [--DATE]
+//[--TABLE] フォームオンロード
+
+[--FRM_PREFIX]_frmDefInit 
+
+  // デフォルトの並び順を指定、配列にプッシュしておく
+JCL_lst_Sort_Append ("v[--FRM_PREFIX]_lst[--TBL_PREFIX]";->v[--FRM_PREFIX]_lst[--TBL_PREFIX]_HeaderNames;->v[--FRM_PREFIX]_lst[--TBL_PREFIX]_SortOrders;1;2)  // 降順
+JCL_lst_Sort_Append ("v[--FRM_PREFIX]_lst[--TBL_PREFIX]";->v[--FRM_PREFIX]_lst[--TBL_PREFIX]_HeaderNames;->v[--FRM_PREFIX]_lst[--TBL_PREFIX]_SortOrders;2;1)  // 昇順
+
+[--FRM_PREFIX]_lst[--TBL_PREFIX]_Make 
+[--FRM_PREFIX]_SetControlsValues 

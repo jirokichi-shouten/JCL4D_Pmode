@@ -1,0 +1,6 @@
+//[--PREFIX]02_LoadValues
+//FG v202103 [--DATE]
+//[--TABLE] レコードの値をプロセス変数にロード
+
+
+v[--PREFIX]02_var[--FIELD]:=[[--TABLE]][--FIELD]

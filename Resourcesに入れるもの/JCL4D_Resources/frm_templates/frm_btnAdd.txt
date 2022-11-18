@@ -1,0 +1,15 @@
+﻿				"v[--FRM_PREFIX]_btnAdd": {
+					"type": "pictureButton",
+					"top": 64,
+					"left": 20,
+					"width": 26,
+					"height": 26,
+					"dataSource": "v[--FRM_PREFIX]_btnAdd",
+					"rowCount": 4,
+					"picture": "/RESOURCES/JCL4D_Resources/pictures/plus_rectangle.png",
+					"switchBackWhenReleased": true,
+					"method": "ObjectMethods/v[--FRM_PREFIX]_btnAdd.4dm",
+					"events": [
+						"onClick"
+					]
+				}

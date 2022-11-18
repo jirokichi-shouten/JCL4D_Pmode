@@ -1,0 +1,15 @@
+﻿				"v[--FRM_PREFIX]_btnOK": {
+					"type": "button",
+					"top": 16,
+					"left": 873,
+					"width": 94,
+					"height": 26,
+					"dataSource": "v[--FRM_PREFIX]_btnOK",
+					"action": "accept",
+					"text": "OK",
+					"class": "JCL_Maryo16",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				}

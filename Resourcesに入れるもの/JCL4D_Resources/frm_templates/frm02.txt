@@ -1,0 +1,50 @@
+﻿{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"events": [
+		"onLoad",
+		"onPageChange",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onOutsideCall",
+		"onBeginDragOver",
+		"onDragOver",
+		"onDrop",
+		"onAfterKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onAfterEdit",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"method": "method.4dm",
+	"windowTitle": "test window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {
+				[--frm_varTitle],
+				[--frm_btnOK],
+				[--frm_btnCancel],
+				[--frm_btnDelete]
+			}
+		},
+		{
+			"objects": {
+				[--frm_flds]
+			}
+		}
+	],
+	"geometryStamp": 105,
+	"width": 987,
+	"height": 644
+}

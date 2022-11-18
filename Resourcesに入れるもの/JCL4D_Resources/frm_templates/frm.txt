@@ -1,0 +1,40 @@
+﻿{
+	"destination": "detailScreen",
+	"width": 1042,
+	"height": 576,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onDoubleClick",
+		"onDrop",
+		"onDataChange",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				[--frm_title],
+				[--frm_btnAdd],
+				[--frm_btnMod],
+				[--frm_btnDel],
+				[--frm_btnClose],
+				[--frm_btnExport],
+				[--frm_varNumOfRecs],
+				[--frm_lst]
+				
+			}
+		}
+	],
+	"geometryStamp": 2,
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	}
+}

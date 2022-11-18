@@ -1,0 +1,22 @@
+//%attributes = {"executedOnServer":true}
+//[--PREFIX]01_lst[--PREFIX]_Make_onServer
+//FG v202209 [--DATE]
+//[[--TABLE]] リストボックス用オブジェクト配列を作成 //サーバ上で実行
+
+C_OBJECT($1; $objSearch)
+$objSearch:=$1
+C_LONGINT($del_flag)
+C_POINTER($2; $outAryObjPtr)  //オブジェクト型配列のポインタ
+$outAryObjPtr:=$2
+C_LONGINT($0)
+C_LONGINT($i; $numOfRecs)
+C_OBJECT($obj[--PREFIX])
+
+READ ONLY([[--TABLE]])
+QUERY([[--TABLE]]; [[--TABLE]][--PREFIX]_DEL_FLAG=$objSearch.del_flag;*)
+QUERY([[--TABLE]])
+
+//DBデータを取得してオブジェクト配列に追加
+$numOfRecs:=[--PREFIX]01_lst[--PREFIX]_Make_aryObj_onServer($outAryObjPtr)
+
+$0:=$numOfRecs

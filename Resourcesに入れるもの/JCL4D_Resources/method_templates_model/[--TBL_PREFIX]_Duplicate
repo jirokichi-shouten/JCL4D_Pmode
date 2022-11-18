@@ -1,0 +1,23 @@
+//[--TBL_PREFIX]_Duplicate
+//method_generator [--DATE]
+//[--TABLE] レコード複製
+//複製
+
+C_LONGINT($1;$[--TBL_PREFIX]_id)
+$[--TBL_PREFIX]_id:=$1
+C_LONGINT($0;$new_[--TBL_PREFIX]_id)
+
+READ WRITE([[--TABLE]])
+QUERY([[--TABLE]];[[--TABLE]][--TBL_PREFIX]_DEL_FLAG=0;*)
+QUERY([[--TABLE]];&;[[--TABLE]][--TBL_PREFIX]_ID=$[--TBL_PREFIX]_id)
+FIRST RECORD([[--TABLE]])
+
+DUPLICATE RECORD([[--TABLE]])
+$new_[--TBL_PREFIX]_id:=Sequence number ([[--TABLE]])
+[[--TABLE]][--TBL_PREFIX]_ID:=$new_[--TBL_PREFIX]_id
+//[[--TABLE]][--TBL_PREFIX]_TITLE:=[[--TABLE]][--TBL_PREFIX]_TITLE+"のコピー"
+[[--TABLE]][--TBL_PREFIX]_UPDATE_DATEMARK:=JCL_str_Datemark (Current date;Current time)
+
+SAVE RECORD([[--TABLE]])
+
+$0:=$new_[--TBL_PREFIX]_id

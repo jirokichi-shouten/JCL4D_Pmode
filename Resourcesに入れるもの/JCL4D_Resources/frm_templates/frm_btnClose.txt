@@ -1,0 +1,16 @@
+﻿				"v[--FRM_PREFIX]_btnClose": {
+					"type": "button",
+					"top": 10,
+					"left": 980,
+					"width": 42,
+					"height": 26,
+					"dataSource": "v[--FRM_PREFIX]_btnClose",
+					"action": "cancel",
+					"shortcutKey": "w",
+					"shortcutAccel": true,
+					"text": "X",
+					"class": "JCL_Maryo16",
+					"events": [
+						"onClick"
+					]
+				}

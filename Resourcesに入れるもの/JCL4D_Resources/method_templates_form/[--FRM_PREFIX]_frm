@@ -1,0 +1,14 @@
+//[--FRM_PREFIX]_frm
+//FG v202103 [--DATE]
+//[--TABLE] フォームメソッド
+
+C_LONGINT($frmEvnt)
+
+$frmEvnt:=Form event code
+
+Case of 
+: ($frmEvnt=On Load)
+
+[--FRM_PREFIX]_frmOnLoad 
+
+End case 

@@ -1,0 +1,14 @@
+//[--FRM_PREFIX]_frmDefInit
+//FG v202103 [--DATE]
+//[--TABLE] プロセス変数宣言・初期化
+
+C_TEXT(v[--FRM_PREFIX]_varNumOfRecs)
+
+// リストボックス用配列
+ARRAY BOOLEAN(v[--FRM_PREFIX]_lst[--TBL_PREFIX];0)//リストボックス自身
+
+ARRAY [--DATATYPE](v[--FRM_PREFIX]_lst[--FIELD];0)
+
+  // ソート順を覚えるため
+ARRAY TEXT(v[--FRM_PREFIX]_lst[--TBL_PREFIX]_HeaderNames;0)
+ARRAY LONGINT(v[--FRM_PREFIX]_lst[--TBL_PREFIX]_SortOrders;0)

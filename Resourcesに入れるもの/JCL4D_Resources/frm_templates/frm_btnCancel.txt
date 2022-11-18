@@ -1,0 +1,16 @@
+﻿				"v[--FRM_PREFIX]_btnCancel ": {
+					"type": "button",
+					"top": 16,
+					"left": 759,
+					"width": 94,
+					"height": 26,
+					"dataSource": "v[--FRM_PREFIX]_btnCancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "キャンセル",
+					"class": "JCL_Maryo16",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				}

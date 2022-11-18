@@ -1,0 +1,19 @@
+//[--FRM_PREFIX]_btnExport
+//FG v202209 [--DATE]
+//リストボックスの一覧をテキストファイルに書き出す, プログレスバー付き、ShowOnDisk付きpgs4
+
+C_TEXT($name)
+$name:="[--TBL_PREFIX]_"
+C_TEXT($filePath)
+C_TEXT($title; $msg; $okStr)
+
+$filePath:=JCL_lst_Export_pgs4 (->v[--FRM_PREFIX]_lst[--TBL_PREFIX];->$name;1)
+If (OK=1)
+	//完了メッセージ表示
+	$title:="[--FRM_PREFIX]_btnExport"
+	$msg:="[--FRM_PREFIX] を書き出しました。"+Char(Carriage return)
+	$msg:=$msg+"ファイル名："+$name
+	$okStr:="OK"
+	JCL_dlg_Inform_ShowOnDisk($title; $msg; $okStr; $filePath)
+	
+End if 

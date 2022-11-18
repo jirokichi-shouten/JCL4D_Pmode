@@ -1,0 +1,31 @@
+//[--FRM_PREFIX]_Input_Mod
+//FG v202103 [--DATE]
+//[--TABLE] レコード編集フォーム
+
+C_LONGINT($1;$[--TBL_PREFIX]_id)
+$[--TBL_PREFIX]_id:=$1
+C_LONGINT($0;$display_ok)//システム変数OKを保持
+
+//モードを渡す、フォームの［削除］ボタンを非表示にするためだったり．．
+[--FRM_PREFIX]_DefInit 
+[--FRM_PREFIX]_varMode_Set ("mod")
+
+READ WRITE([[--TABLE]])
+QUERY([[--TABLE]];[[--TABLE]][--TBL_PREFIX]_ID=$[--TBL_PREFIX]_id)
+[--FRM_PREFIX]_LoadValues 
+$display_ok:=[--FRM_PREFIX]_Display ($[--TBL_PREFIX]_id)//OK変数の値を保持
+If ($display_ok=1)
+
+//更新日をＤＢに保存
+READ WRITE([[--TABLE]])
+QUERY([[--TABLE]];[[--TABLE]][--TBL_PREFIX]_ID=$[--TBL_PREFIX]_id)
+[--FRM_PREFIX]_SaveValues 
+[[--TABLE]][--TBL_PREFIX]_UPDATE_DATEMARK:=JCL_str_Datemark (Current date;Current time)
+SAVE RECORD([[--TABLE]])
+
+End if 
+
+UNLOAD RECORD([[--TABLE]])
+READ ONLY([[--TABLE]])
+
+$0:=$display_ok

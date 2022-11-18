@@ -1,0 +1,6 @@
+//[--PREFIX]02_SaveValues
+//FG v202103 [--DATE]
+//[--TABLE] プロセス変数の値をレコードに保存
+
+
+[[--TABLE]][--FIELD]:=v[--PREFIX]02_var[--FIELD]

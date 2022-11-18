@@ -1,0 +1,22 @@
+//[--TBL_PREFIX]_GetRecord
+//method_generator [--DATE]
+//[--TABLE] レコード取得、IDでクエリーしてオブジェクト型で返す
+
+C_LONGINT($1;$[--TBL_PREFIX]_id)
+$[--TBL_PREFIX]_id:=$1
+C_Object($2;$obj[--TBL_PREFIX])
+$obj[--TBL_PREFIX]:=$2
+C_LONGINT($0;$numOfRecs)
+
+READ WRITE([[--TABLE]])
+QUERY([[--TABLE]];[[--TABLE]][--TBL_PREFIX]_DEL_FLAG=0;*)
+QUERY([[--TABLE]];&;[[--TABLE]][--TBL_PREFIX]_ID=$[--TBL_PREFIX]_id)
+FIRST RECORD([[--TABLE]])
+$numOfRecs:=records in selection([[--TABLE]])
+if ($numOfRecs=1)
+//レコードをオブジェクト型の変数に格納
+$obj[--TBL_PREFIX].[--FIELD]:=[[--TABLE]][--FIELD]
+
+end if
+
+$0:=$numOfRecs

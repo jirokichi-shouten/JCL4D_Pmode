@@ -1,0 +1,29 @@
+//%attributes = {"executedOnServer":true}
+//[--PREFIX]_lst[--PREFIX]_Make_aryObj_onServer
+//FG v202209 [--DATE]
+//[[--TABLE]] 一覧表に必要な値をオブジェクト配列に作成　//サーバ上で実行
+//カレントセレクションが前提
+
+C_POINTER($1;$outAryPtr) //オブジェクト型配列のポインタ
+$outAryPtr:=$1
+C_LONGINT($0)
+C_LONGINT($numOfRecs;$i)
+C_OBJECT($obj[--PREFIX])
+
+//DBデータを取得してオブジェクト配列に追加
+$numOfRecs:=Records in selection([[--TABLE]])
+For ($i; 1; $numOfRecs)
+	GOTO SELECTED RECORD([[--TABLE]]; $i)
+	
+	//オブジェクト型配列に追加
+	$obj[--PREFIX]:=New object
+	
+	$obj[--PREFIX].[--FIELD]:=[[--TABLE]][--FIELD]
+	
+	//join code here
+	
+	APPEND TO ARRAY($outAryPtr->; $obj[--PREFIX])
+	
+End for 
+
+$0:=$numOfRecs
