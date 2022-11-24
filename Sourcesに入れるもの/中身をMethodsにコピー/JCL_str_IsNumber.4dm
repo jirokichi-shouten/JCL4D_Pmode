@@ -1,5 +1,6 @@
 //%attributes = {}
 //JCL_str_IsNumber
+//20221122 wat renewal 文字列対応, 「.,-」対応
 //20180926 wat
 //JCL_str_Numbers
 //JCL_str_GetNumber
@@ -15,14 +16,11 @@ C_TEXT:C284($1; $str)
 $str:=$1
 C_BOOLEAN:C305($0; $result)
 $result:=False:C215
-
 C_LONGINT:C283($i; $length)
 $length:=Length:C16($str)
-
 C_TEXT:C284($char)
 
 For ($i; 1; $length)
-	
 	//i番目の文字を取り出す
 	$char:=$str[[$i]]
 	
@@ -47,31 +45,25 @@ For ($i; 1; $length)
 			$result:=True:C214
 		: ($char="9")
 			$result:=True:C214
-		: ($char="０")
-			$result:=False:C215
-		: ($char="１")
-			$result:=False:C215
-		: ($char="２")
-			$result:=False:C215
-		: ($char="３")
-			$result:=False:C215
-		: ($char="４")
-			$result:=False:C215
-		: ($char="５")
-			$result:=False:C215
-		: ($char="６")
-			$result:=False:C215
-		: ($char="７")
-			$result:=False:C215
-		: ($char="８")
-			$result:=False:C215
-		: ($char="９")
-			$result:=False:C215
+			
+		: ($char=".")
+			$result:=True:C214
+		: ($char=",")
+			$result:=True:C214
+		: ($char="-")
+			$result:=True:C214
+			
 		Else 
 			$result:=False:C215
 			//数字以外
 	End case 
 	
+	//一つでも数字以外があれば抜ける
+	If ($result=False:C215)
+		$i:=$length
+		
+	End if 
 End for 
 
 $0:=$result
+
