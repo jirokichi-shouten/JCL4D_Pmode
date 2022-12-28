@@ -22,6 +22,9 @@ $outFilePath:=JCL_file_MakeFilePath($outFilePath; "fields.txt")
 $fileText:=Document to text:C1236($outFilePath; UTF8 text without length:K22:17)
 If ($fileText#"")
 	
+	//改行コードをLFに統一
+	$fileText:=JCL_str_ReplaceReturn($fileText)  //add_ikeda 20221228
+	
 	//改行で切り分ける
 	$numOfLines:=JCL_str_Extract_byReturn($fileText; ->$lineAry)  //add_ikeda 20221227
 	
