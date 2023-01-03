@@ -1,14 +1,18 @@
 //[--PREFIX]01_Display
-//FG v202103 [--DATE]
+//FG v20230103 [--DATE]
 //[--TABLE] 一覧ウインドウ表示
 
 C_LONGINT($wref)
 C_LONGINT($0)
 C_TEXT($title)
+C_TEXT($frmName)
+$frmName:="[--PREFIX]01_List"
+$wref:=Open form window([[--TABLE]];$frmName;Movable form dialog box;Horizontally Centered;Vertically Centered;*)
 
-$wref:=Open form window([[--TABLE]];"[--PREFIX]01_List";Movable form dialog box;Horizontally Centered;Vertically Centered;*)
-$title:="[--PREFIX]01_List"
-DIALOG([[--TABLE]];"[--PREFIX]01_List")
+$title:=$frmName
+SET WINDOW TITLE($title; $wref)
+
+DIALOG([[--TABLE]];$frmName)
 CLOSE WINDOW($Wref)//ウィンドウを閉じる 
 
 $0:=OK
