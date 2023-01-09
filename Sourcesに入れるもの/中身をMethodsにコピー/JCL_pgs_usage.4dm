@@ -4,6 +4,8 @@
 //JCL_dlg　プログレスバー 使用方法
 //プログレスバーをテストする
 
+//usage1: whileループ
+
 C_BOOLEAN:C305($done)
 C_LONGINT:C283($progress)
 
